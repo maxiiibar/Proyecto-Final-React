@@ -1,0 +1,36 @@
+.itemDetail{
+    display: flex;
+    align-items: center;
+    height: 500px;
+
+}
+.imagenDetail, .texto{
+    width: 50%;
+}
+.imagenDetail{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagenDetail img{
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 400px;
+}
+.nombreDetail{
+    font-size: 50px;
+    font-weight: 700;
+}
+.descripcionDetail{
+    font-size: 20px;
+}
+.envioDetail{
+    font-size: 15px;
+    color: rgb(0, 172, 0);
+}
+.precioDetail{
+    font-weight: 700;
+    font-size: 40px;
+}

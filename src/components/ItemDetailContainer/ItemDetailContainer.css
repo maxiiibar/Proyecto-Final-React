@@ -1,0 +1,14 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.itemDetailContainer {
+  background-color: white;
+  width: 1200px;
+  border-radius: 10px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

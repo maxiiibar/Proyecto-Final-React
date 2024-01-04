@@ -1,0 +1,38 @@
+.itemCount{
+    width: 200px;
+}
+.controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.finalizar{
+    margin-top: 10px;
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    color: rgb(0, 21, 35);
+}
+.finalizar:hover{
+    background-color: rgb(0, 21, 35);
+    border-color: rgb(0, 21, 35);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+button{
+    border: 1px solid;
+    border-radius: 6px;
+}
+.controles button {
+    width: 40px;
+    height: 35px;
+    color: white;
+    background-color: rgb(0, 21, 35);
+}
+.controles button:hover{
+    background-color: white;
+    border-color: rgb(0, 21, 35);
+    color: rgb(0, 21, 35);
+    transition: background-color 0.3s ease-in-out;
+}
