@@ -13,8 +13,10 @@ const Item = ({producto}) => {
   }
 
   const estiloCard = {
-    transform: zoom ? 'scale(1.1)' : 'scale(1.0)',
-    transition: 'transform 0.2s ease-in-out'
+    transform: zoom ? 'scale(1.05)' : 'scale(1.0)',
+    transition: 'transform 0.2s ease-in-out',
+    boxShadow: zoom ? '2px 2px 10px 0.5px rgba(0, 0, 0, 0.2)' : 'none',
+    zIndex: zoom? '9000' : '1',
   }
   return (
     <div className="item" style={estiloCard} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>

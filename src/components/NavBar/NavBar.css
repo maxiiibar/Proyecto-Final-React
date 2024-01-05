@@ -4,7 +4,8 @@
     height: 70px;
     justify-content: space-between;
     align-items: center;
-    background-color: black;padding: 0 20px;
+    background-color: black;
+    padding: 0 20px;
 }
 #navbar ul {
     height: 70px;

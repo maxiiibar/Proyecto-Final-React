@@ -12,7 +12,7 @@ const ItemCount = ({ stock, agregarAlCarrito }) => {
     }
     
     const restar = () => {
-        if (contador > stock) {
+        if (contador > 1) {
             setContador(contador - 1)
         }
     }
@@ -24,7 +24,7 @@ const ItemCount = ({ stock, agregarAlCarrito }) => {
                 <p>{contador}</p>
                 <button onClick={sumar}>+</button>
             </div>
-            <button className="finalizar">
+            <button onClick={()=>{agregarAlCarrito(contador)}} className="finalizar">
                 Agregar al Carrito
             </button>
         </div>

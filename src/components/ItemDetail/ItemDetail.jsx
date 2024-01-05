@@ -7,14 +7,14 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 
 const ItemDetail = ({ producto }) => {
-  /* const [toggle, setToggle] = useState(false);
-  const { añadirProducto } = useContext(CartContext)
+  const [toggle, setToggle] = useState(false);
+  /* const { añadirProducto } = useContext(CartContext) */
 
   const agregarAlCarrito = (contador) => {
     const productoNuevo = {...producto, cantidad: contador }
-    añadirProducto(productoNuevo)
+    /* añadirProducto(productoNuevo) */
     setToggle(true);
-  }; */
+  };
 
   return (
     <div className="itemDetail">
@@ -28,7 +28,16 @@ const ItemDetail = ({ producto }) => {
           {producto.envioGratis ? "Envío Gratis" : ""}
         </h4>
         <h3 className="precioDetail">${producto.precio}</h3>
-        <ItemCount/>
+        {toggle ? (
+          <>
+          <div className="botones-detail">
+          <Link className="boton-detail" to="/carrito">Ir al carrito</Link>
+          <Link className="boton-detail" to="/">Seguir comprando</Link>
+          </div>
+          </>
+        ) : (
+          <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>
+        )}
       </div>
     </div>
   );
