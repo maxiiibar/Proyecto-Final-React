@@ -5,7 +5,7 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <div id="navbar">
+    <nav>
       <Link to="/" className="brand">
         <img src="/img/Logitech-Symbol.png" alt="Logo" />
       </Link>
@@ -27,7 +27,7 @@ const NavBar = () => {
         </li>
       </ul>
       <CartWidget />
-    </div>
+    </nav>
   );
 };
 

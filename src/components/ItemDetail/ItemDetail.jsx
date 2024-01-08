@@ -1,18 +1,17 @@
 import { useState, useContext } from "react";
-
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
-/* import { CartContext } from "../../context/CartContext"; */
+import { CartContext } from "../../context/CartContext";
 
 import "./ItemDetail.css";
 
 const ItemDetail = ({ producto }) => {
   const [toggle, setToggle] = useState(false);
-  /* const { añadirProducto } = useContext(CartContext) */
+  const { añadirPrAlCarrito } = useContext(CartContext)
 
   const agregarAlCarrito = (contador) => {
     const productoNuevo = {...producto, cantidad: contador }
-    /* añadirProducto(productoNuevo) */
+    añadirPrAlCarrito(productoNuevo)
     setToggle(true);
   };
 

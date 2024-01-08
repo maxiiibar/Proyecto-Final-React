@@ -1,4 +1,4 @@
-#navbar{
+nav{
     display: flex;
     width: 100%;
     height: 70px;
@@ -7,7 +7,7 @@
     background-color: black;
     padding: 0 20px;
 }
-#navbar ul {
+nav ul {
     height: 70px;
     display: flex;
     align-items: center;
@@ -15,29 +15,21 @@
     padding: 0;
     margin: 0;
 }
-#navbar ul li{
+nav ul li{
     height: 70px;
 }
-#navbar ul li a{
+nav ul li a{
     height: 100%;
     padding: 0 15px;
     display: flex;
     align-items: center;
 }
-#navbar ul li a:hover{
+nav ul li a:hover{
     background-color: rgb(77, 77, 77);
     cursor: pointer ;
     color: white;
 }
-
-#cartwidget img{
-    width: 25px;
-    height: 25px;
-}
-#cartwidget p {
-    height: 25px;
-}
-#cartwidget{
+.cartwidget{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +37,10 @@
     width: 70px;
     height: 70px;
 }
-
-#cartwidget:hover{
+.cartwidget:hover{
     background-color: rgb(77, 77, 77);
     cursor: pointer ;
+    color: white;
 }
 .brand img{
     width: 75px;
