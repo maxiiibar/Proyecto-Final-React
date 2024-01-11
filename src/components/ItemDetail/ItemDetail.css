@@ -2,11 +2,18 @@
     display: flex;
     align-items: center;
     height: 500px;
-
 }
 .imagenDetail, .texto{
     width: 50%;
     color: black;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 500px;
+    padding: 20px 0;
 }
 .imagenDetail{
     height: 500px;

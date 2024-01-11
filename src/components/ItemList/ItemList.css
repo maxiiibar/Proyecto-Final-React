@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: white;
-    gap: 10px;
-    width: 1500px;
+    gap: 30px;
+    background-color: rgba(0, 162, 255, 0.789);
+    width: 975px;
     border-radius: 10px;
+    padding: 50px;
 }
