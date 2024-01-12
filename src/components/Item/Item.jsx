@@ -14,10 +14,12 @@ const Item = ({ producto }) => {
 
   const estiloCard = {
     transform: zoom ? "scale(1.1)" : "scale(1.0)",
-    transition: "transform 0.2s ease-in-out",
+    transition: "transform 0.2s ease-in-out, boxShadow 0.2s ease-in-out",
     boxShadow: zoom ? "4px 4px 15px 1px rgba(0, 0, 0, 0.4)" : "2px 2px 10px 0.5px rgba(0, 0, 0, 0.2)",
     zIndex: zoom ? "9000" : "1",
+    overflow: "hidden",
   };
+  
   return (
     <div
       className="item"
