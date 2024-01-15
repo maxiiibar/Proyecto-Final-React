@@ -21,8 +21,6 @@
     align-items: start;
 }
 img{
-    height: auto;
-    width: auto;
     max-width: 130px;
     max-height: 130px;
 }

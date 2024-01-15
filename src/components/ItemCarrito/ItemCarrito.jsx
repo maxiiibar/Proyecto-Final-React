@@ -1,20 +1,22 @@
+import './ItemCarrito.css'
+
 const ItemCarrito = ( {producto} ) => {
   return (
-    <article>
-        <div>
+    <article className="item-carrito">
+        <div className='imagen-carrito'>
             <img src={producto.imagen} alt="" />
         </div>
-        <div>
+        <div className='informacion-carrito'>
             <p>{producto.nombre}</p>
             <button>Eliminar</button>
         </div>
-        <div>
+        <div className='botones-carrito'>
             <button>-</button>
-            <p>1</p>
+            <p>{producto.cantidad}</p>
             <button>+</button>
         </div>
         <div className="precio">
-            <p>333333</p>
+            <p>${producto.precio}</p>
         </div>
     </article>
   )
