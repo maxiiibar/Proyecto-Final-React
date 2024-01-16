@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import ItemCarrito from "../ItemCarrito/ItemCarrito";
+import ResumenCompra from "../ResumenCompra/ResumenCompra";
 import "./Carrito.css";
 
 const Carrito = () => {
@@ -52,7 +53,7 @@ const Carrito = () => {
             <ItemCarrito producto={producto} key={producto.id} />
           ))}
         </div>
-        <div className="total-recibo"></div>
+        <ResumenCompra />
       </div>
     </section>
   );

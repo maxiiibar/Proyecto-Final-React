@@ -24,8 +24,24 @@ const CartProvider = ( {children} ) => {
     const estaEnElCarrito = (idProducto) => {
         return carrito.findIndex((producto)=> producto.id === idProducto )
     }
+
+    const totalPrecio = () => {
+        return carrito.reduce((total,producto) => total + producto.precio*producto.cantidad, 0)
+    }
+
+    const totalEnvio = () => {
+        return carrito.reduce((total,producto) => {
+            if (producto.precio){
+                return total + producto.precio
+            }
+            else{
+                return total
+            }
+        },0)
+    }
+
     return (
-        <CartContext.Provider value={{carrito, añadirPrAlCarrito, totalCantidad}}>
+        <CartContext.Provider value={{carrito, añadirPrAlCarrito, totalCantidad, totalPrecio, totalEnvio}}>
             {children}
         </CartContext.Provider>
     )

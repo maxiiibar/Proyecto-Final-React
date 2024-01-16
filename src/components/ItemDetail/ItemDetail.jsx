@@ -16,7 +16,7 @@ const ItemDetail = ({ producto }) => {
   };
 
   return (
-    <div className="itemDetail">
+    <article className="itemDetail">
       <div className="imagenDetail">
         <img src={producto.imagen} alt="Imagen" />
       </div>
@@ -38,7 +38,7 @@ const ItemDetail = ({ producto }) => {
           <ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

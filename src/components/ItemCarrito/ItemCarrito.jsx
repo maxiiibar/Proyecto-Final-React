@@ -16,7 +16,7 @@ const ItemCarrito = ( {producto} ) => {
             <button>+</button>
         </div>
         <div className="precio">
-            <p>${producto.precio}</p>
+            <p>${producto.precio*producto.cantidad}</p>
         </div>
     </article>
   )

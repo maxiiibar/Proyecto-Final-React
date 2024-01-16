@@ -6,6 +6,9 @@ nav{
     align-items: center;
     background-color: black;
     padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
 }
 nav ul {
     height: 70px;

@@ -9,7 +9,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_689059-MLU72577252918_112023-O.webp",
     categoria: "auriculares",
-    envioGratis: true,
+    envioGratis: 1000,
   },
   {
     id: "ljm322",
@@ -21,7 +21,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_760857-MLA44771394445_022021-O.webp",
     categoria: "auriculares",
-    envioGratis: false,
+    envioGratis: 0,
   },
   {
     id: "jht332",
@@ -33,7 +33,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_939703-MLA43754579245_102020-O.webp",
     categoria: "teclados",
-    envioGratis: true,
+    envioGratis: 0,
   },
   {
     id: "wes236",
@@ -44,7 +44,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_605478-MLU72756924884_112023-O.webp",
     categoria: "mouses",
-    envioGratis: false,
+    envioGratis: 0,
   },
   {
     id: "kmt866",
@@ -56,7 +56,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_819872-MLA50186686056_062022-O.webp",
     categoria: "microfonos",
-    envioGratis: true,
+    envioGratis: 800,
   },
   {
     id: "khg522",
@@ -68,7 +68,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_854109-MLU72644549083_112023-O.webp",
     categoria: "mousepads",
-    envioGratis: true,
+    envioGratis: 1000,
   },
   {
     id: "prw092",
@@ -80,7 +80,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_632053-MLU72776067283_112023-O.webp",
     categoria: "mouses",
-    envioGratis: false,
+    envioGratis: 0,
   },
   {
     id: "ujm422",
@@ -92,7 +92,7 @@ const productos = [
     imagen:
       "https://http2.mlstatic.com/D_NQ_NP_757719-MLA52349939112_112022-O.webp",
     categoria: "teclados",
-    envioGratis: false,
+    envioGratis: 0,
   },
 ];
 
