@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import obtenerProductos from "../Utilidades/data";
+import { collection, getDocs, query, where } from "firebase/firestore"
+import db from "../../db/db";
+
 import ItemList from "../ItemList/ItemList"
 import "./ItemListContainer.css"
 
@@ -9,20 +11,16 @@ const ItemListContainer = () => {
   const { categoria } = useParams();
 
   useEffect(() => {
-    obtenerProductos
-      .then((respuesta) => {
-        if (categoria) {
-          const filtrado = respuesta.filter(
-            (producto) => producto.categoria === categoria
-          );
-          setProductos(filtrado);
-        } else {
-          setProductos(respuesta);
-        }
+    const productosRef = collection(db, "productos")
+
+    getDocs(productosRef)
+    .then((respuesta) => {
+      let productosDb = respuesta.docs.map ((productos) => {
+        return { id: productos.id, ...productos.data() }
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      setProductos(productosDb)
+    })
+    .catch ((error) => console.log(error))
   },[categoria]);
 
   return (
