@@ -34,7 +34,7 @@ const Item = ({ producto }) => {
         <p className="nombreProducto">{producto.nombre}</p>
         <p className="precioProducto">${producto.precio}</p>
         <p className="envioProducto">
-          {producto.envioGratis ===0 ? "Envío Gratis" : "Envío: $" + producto.envioGratis}
+          {producto.envio === 0 ? "Envío Gratis" : "Envío: $" + producto.envio}
         </p>
         <Link to={`/detalle/${producto.id}`} className="link">
           Ver detalles

@@ -1,5 +1,5 @@
 .total-recibo{
-    width: 500px;
+    width: 450px;
     height: 500px;
     padding: 20px;
     top: 10px;
@@ -8,6 +8,7 @@
 .contenedor-resumen{
     position: sticky;
     top: 140px;
+    height: 250px;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
@@ -17,4 +18,37 @@
     font-weight: 700;
     padding-bottom: 10PX;
     border-bottom: 1px solid black;
+}
+.total-recibo h4{
+    margin:0;
+}
+.total-producto, .total-envio, .total{
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.boton-compra{
+    margin-top: 20px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+.continuar-compra {
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continuar-compra:hover{
+    color: black;
+}
+.vaciar-carrito{
+    width: 80px;
+    height: 50px;
+    line-height: 19px;
+    background-color: white;
 }
