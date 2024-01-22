@@ -51,7 +51,14 @@ nav ul li a:hover {
     cursor: pointer;
     color: white;
 }
-
+.brand{
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .brand img {
-    width: 75px;
+    width: 50px;
 }

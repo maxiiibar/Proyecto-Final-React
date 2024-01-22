@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav>
       <Link to="/" className="brand">
-        <img src="/img/Logitech-Symbol.png" alt="Logo" />
+        <img src="/img/logomando.png" alt="Logo" />
       </Link>
       <ul>
         <li>

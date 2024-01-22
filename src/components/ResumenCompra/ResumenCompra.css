@@ -1,6 +1,6 @@
 .total-recibo {
     width: 450px;
-    height: 500px;
+    height: 100vh;
     padding: 20px;
     top: 10px;
     z-index: 9000;
@@ -38,7 +38,7 @@
     margin-top: 20px;
     width: 370px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -55,12 +55,24 @@
 
 .continuar-compra:hover {
     color: black;
+    background-color: rgb(0, 150, 72);
+    border: 1px solid black;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .vaciar-carrito {
-    width: 80px;
+    width: 50px;
     height: 50px;
-    line-height: 19px;
+    font-size: 20px;
+    color: black;
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid black;
+}
+
+.vaciar-carrito:hover {
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
 }

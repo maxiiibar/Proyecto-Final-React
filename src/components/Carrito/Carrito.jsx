@@ -29,7 +29,7 @@ const Carrito = () => {
 
   if (carrito.length === 0) {
     return (
-      <section className="contenedor-carrito-vacio">
+      <section className="contenedor-carrito-vacio seccion-contenedor-carrito">
         <article className="carrito-vacio">
           <h2>Ooppss el carrito esta vacio...</h2>
           <Link
@@ -47,7 +47,7 @@ const Carrito = () => {
   }
 
   return (
-    <section className="seccion-carrito">
+    <section className="seccion-carrito seccion-contenedor-carrito">
       <div className="contenedor-carrito">
         <div className="lista-items">
           {carrito.map((producto) => (
