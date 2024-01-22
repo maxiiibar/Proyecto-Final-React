@@ -1,16 +1,17 @@
 import { useContext } from "react";
 import { useState } from "react";
+
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import ItemCarrito from "../ItemCarrito/ItemCarrito";
 import ResumenCompra from "../ResumenCompra/ResumenCompra";
+
 import "./Carrito.css";
 
 const Carrito = () => {
   const { carrito } = useContext(CartContext);
-
   const [zoom, setZoom] = useState(false);
-
+  
   const handleMouseOver = () => {
     setZoom(true);
   };

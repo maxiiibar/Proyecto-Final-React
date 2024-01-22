@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import Carrito from './components/Carrito/Carrito'
 import Checkout from './components/Checkout/Checkout'
+
 import './App.css'
 
 function App() {

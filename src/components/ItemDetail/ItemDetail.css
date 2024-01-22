@@ -1,13 +1,16 @@
-.itemDetail{
+.itemDetail {
     display: flex;
     align-items: center;
     height: 500px;
 }
-.imagenDetail, .texto{
+
+.imagenDetail,
+.texto {
     width: 50%;
     color: black;
 }
-.texto{
+
+.texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,39 +18,47 @@
     width: 500px;
     padding: 20px 0;
 }
-.imagenDetail{
+
+.imagenDetail {
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagenDetail img{
+
+.imagenDetail img {
     height: auto;
     width: auto;
     max-width: 500px;
     max-height: 400px;
 }
-.nombreDetail{
+
+.nombreDetail {
     font-size: 50px;
     font-weight: 700;
 }
-.descripcionDetail{
+
+.descripcionDetail {
     font-size: 20px;
 }
-.envioDetail{
+
+.envioDetail {
     font-size: 15px;
     color: rgb(0, 172, 0);
 }
-.precioDetail{
+
+.precioDetail {
     font-weight: 700;
     font-size: 40px;
 }
-.botones-detail{
+
+.botones-detail {
     display: flex;
     flex-direction: column;
     width: 200px;
 }
-.boton-detail{
+
+.boton-detail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +70,8 @@
     border: 1px solid;
     border-radius: 6px;
 }
-.boton-detail:hover{
+
+.boton-detail:hover {
     background-color: black;
     color: white;
     transition: background-color 0.1s ease-in-out;

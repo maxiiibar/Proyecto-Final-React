@@ -1,11 +1,12 @@
-.total-recibo{
+.total-recibo {
     width: 450px;
     height: 500px;
     padding: 20px;
     top: 10px;
     z-index: 9000;
 }
-.contenedor-resumen{
+
+.contenedor-resumen {
     position: sticky;
     top: 140px;
     height: 250px;
@@ -14,25 +15,33 @@
     padding: 20px;
     box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.contenedor-resumen h2{
+
+.contenedor-resumen h2 {
     font-weight: 700;
     padding-bottom: 10PX;
     border-bottom: 1px solid black;
 }
-.total-recibo h4{
-    margin:0;
+
+.total-recibo h4 {
+    margin: 0;
 }
-.total-producto, .total-envio, .total{
+
+.total-producto,
+.total-envio,
+.total {
     margin-bottom: 1px;
     display: flex;
     justify-content: space-between;
 }
-.boton-compra{
+
+.boton-compra {
     margin-top: 20px;
     width: 370px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 10px;
 }
+
 .continuar-compra {
     border: 1px solid black;
     color: black;
@@ -43,12 +52,15 @@
     justify-content: center;
     align-items: center;
 }
-.continuar-compra:hover{
+
+.continuar-compra:hover {
     color: black;
 }
-.vaciar-carrito{
+
+.vaciar-carrito {
     width: 80px;
     height: 50px;
     line-height: 19px;
     background-color: white;
+    border: 1px solid red;
 }

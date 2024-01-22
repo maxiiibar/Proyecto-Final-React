@@ -1,8 +1,9 @@
-.contenedor-carrito-vacio{
+.contenedor-carrito-vacio {
     display: flex;
     justify-content: center;
 }
-.carrito-vacio{
+
+.carrito-vacio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,27 +12,31 @@
     width: 1000px;
     height: 200px;
 }
-.carrito-vacio h2{
+
+.carrito-vacio h2 {
     font-weight: 700;
     font-size: 40px;
     color: white;
 }
-.button-volver{
+
+.button-volver {
     background-color: white;
     font-weight: 500;
     color: black;
     padding: 10px;
     border-radius: 5px;
 }
-.button-volver:hover{
+
+.button-volver:hover {
     color: black;
 }
 
-.seccion-carrito{
+.seccion-carrito {
     display: flex;
     justify-content: center;
 }
-.contenedor-carrito{
+
+.contenedor-carrito {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -40,7 +45,8 @@
     margin-top: 50px;
     border-radius: 10px;
 }
-.lista-items{
+
+.lista-items {
     width: 700px;
     height: fit-content;
     display: flex;
@@ -49,6 +55,7 @@
     gap: 30px;
     padding: 20px;
 }
+
 section {
     padding-top: 70px;
 }

@@ -1,4 +1,4 @@
-.item{
+.item {
     width: 195px;
     height: 320px;
     background-color: white;
@@ -9,41 +9,49 @@
     justify-content: flex-start;
     padding: 10px 0;
 }
-.imagen{
+
+.imagen {
     height: 175px;
     width: 175px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contenido{
+
+.contenido {
     width: 160px;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-img{
+
+img {
     max-width: 130px;
     max-height: 130px;
 }
+
 .item p {
     margin: 0px;
 }
-.nombreProducto{
+
+.nombreProducto {
     font-size: 15px;
     height: 42.5px;
 }
-.envioProducto{
+
+.envioProducto {
     height: 20px;
     font-size: 12.5px;
     color: rgb(0, 172, 0);
 }
-.precioProducto{
+
+.precioProducto {
     font-size: 20px;
     height: 25px;
     font-weight: 700;
 }
-.link{
+
+.link {
     display: flex;
     justify-content: center;
     margin-top: 2.5px;
@@ -52,7 +60,8 @@ img{
     padding: 5px;
     border: 0;
 }
-.link:hover{
+
+.link:hover {
     color: white;
     background-color: rgb(2, 129, 203);
 }

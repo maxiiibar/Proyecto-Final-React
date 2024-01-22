@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+
+import { Link } from "react-router-dom";
+
 import "./Item.css";
 
 const Item = ({ producto }) => {
@@ -19,7 +21,7 @@ const Item = ({ producto }) => {
     zIndex: zoom ? "9000" : "1",
     overflow: "hidden",
   };
-  
+
   return (
     <div
       className="item"
