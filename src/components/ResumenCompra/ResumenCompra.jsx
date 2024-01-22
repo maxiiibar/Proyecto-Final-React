@@ -6,14 +6,14 @@ import { CartContext } from "../../context/CartContext";
 import "./ResumenCompra.css";
 
 const ResumenCompra = () => {
-  const { totalPrecio, totalEnvio, vaciarCarrito } = useContext(CartContext);
+  const { totalPrecio, totalEnvio, vaciarCarrito, totalCantidad } = useContext(CartContext);
 
   return (
     <div className="total-recibo">
       <article className="contenedor-resumen">
         <h2>Resumen de compra</h2>
         <div className="total-producto">
-          <p>Total productos:</p>
+          <p>Total productos ({totalCantidad()}):</p>
           <p>${totalPrecio()}</p>
         </div>
         {totalEnvio() == 0 ? (
