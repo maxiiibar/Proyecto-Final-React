@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore"
+import { BarLoader } from "react-spinners"
 import ItemDetail from "../ItemDetail/ItemDetail";
 import db from "../../db/db";
 
@@ -9,10 +10,12 @@ import "./ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
+  const [cargando, setCargando] = useState(true);
   const [productoNoExiste, setProductoNoExiste] = useState(false)
   const { id } = useParams();
 
   useEffect(() => {
+    setCargando(true)
     const productoRef = doc(db, "productos", id)
     getDoc(productoRef)
       .then((respuesta) => {
@@ -22,11 +25,13 @@ const ItemDetailContainer = () => {
         }
         setProducto(productoDb)
       })
-
+      .catch((error) => console.log(error))
+      .finally(() => setCargando(false))
   }, [id]);
 
+  console.log(cargando)
   return (
-    <div className="contenedor">
+    <div className="contenedor" style={cargando ? {alignItems:"center"}: ({})}>
       {
         productoNoExiste ? (
           <div className="pr-no-existe">
@@ -34,9 +39,13 @@ const ItemDetailContainer = () => {
             <h3>Este producto no existe 😭</h3>
           </div>
         ) : (
-          <div className="itemDetailContainer">
+          cargando ? (
+            <BarLoader color="white" />
+          ) :(
+            <div className="itemDetailContainer">
             <ItemDetail producto={producto} />
-          </div>
+            </div>
+          )
         )
       }
     </div>

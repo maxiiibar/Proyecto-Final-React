@@ -29,7 +29,7 @@ const ResumenCompra = () => {
           <h4>${totalEnvio() + totalPrecio()}</h4>
         </div>
         <div className="boton-compra">
-          <button onClick={vaciarCarrito} className="vaciar-carrito"><i class="fa-solid fa-trash"></i></button>
+          <button onClick={vaciarCarrito} className="vaciar-carrito"><i className="fa-solid fa-trash"></i></button>
           <Link className="continuar-compra" to="/checkout">
             Continuar compra
           </Link>
