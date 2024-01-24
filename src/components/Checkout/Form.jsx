@@ -21,7 +21,7 @@ const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
         <label htmlFor="nombre">Nombre</label>
         <input type="text" id='nombre' name='nombre' value={datosForm.nombre} onChange={guardarDatosInput} required />
         
-        <label htmlFor="telefono">Telefono</label>
+        <label htmlFor="telefono">Teléfono</label>
         <input type="text" id='telefono' name='telefono' value={datosForm.telefono} onChange={guardarDatosInput} required />
         
         <label htmlFor="email">Email</label>

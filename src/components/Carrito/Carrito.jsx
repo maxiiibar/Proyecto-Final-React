@@ -31,7 +31,7 @@ const Carrito = () => {
     return (
       <section className="contenedor-carrito-vacio seccion-contenedor-carrito">
         <article className="carrito-vacio">
-          <h2>Ooppss el carrito esta vacio...</h2>
+          <h2>Ooppss el carrito esta vacío...</h2>
           <Link
             className="button-volver"
             style={estiloCard}

@@ -11,6 +11,7 @@ import "./ItemListContainer.css";
 const ItemListContainer = ({ encabezado }) => {
   const [productos, setProductos] = useState([]);
   const [cargando, setCargando] = useState(true);
+  const [cant, setCant] = useState();
   const { categoria } = useParams();
 
   useEffect(() => {
@@ -23,34 +24,34 @@ const ItemListContainer = ({ encabezado }) => {
       consulta = productosRef;
     }
     getDocs(consulta)
-      .then((respuesta) => {
-        let productosDb = respuesta.docs.map((productos) => {
+    .then((respuesta) => {
+      let productosDb = respuesta.docs.splice(0,8)
+        productosDb = productosDb.map((productos) => {
           return { id: productos.id, ...productos.data() };
         });
         setProductos(productosDb);
+        setCant(productosDb.length)
       })
       .catch((error) => console.log(error))
-      .finally(()=> setCargando(false))
+      .finally(() => setCargando(false))
   }, [categoria]);
 
   return (
-    <div className="itemListContainer" style={cargando ? { justifyContent: "center" } : (encabezado ? { height: "105vh" } : {})}>
-      {
-        cargando ?(
-          <BarLoader color="white" />
-        ):(
+    <div className="itemListContainer" style={cargando ? { justifyContent: "center", height: "calc(100vh - 70px)" } : (cant > 4 ? { height: "120vh" } : {height: "calc(100vh - 70px)"})}>
+      {cargando ? (
+        <BarLoader color="white" />
+      ) : (
+        <>
           <div className="encabezado">
-            {
-            encabezado ? (
+            {encabezado ? (
               <h2>PRODUCTOS DESTACADOS</h2>
             ) : (
               <h2>{categoria.toUpperCase()}</h2>
-            )
-          }
-          <ItemList productos={productos} />
+            )}
           </div>
-        )
-      }
+          <ItemList productos={productos} />
+        </>
+      )}
     </div>
   );
 };

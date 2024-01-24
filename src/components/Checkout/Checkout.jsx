@@ -74,7 +74,7 @@ const Checkout = () => {
         <div className="ordenGenerada">
           <h2>Orden generada exitosamente!!!</h2>
           <div className="codigoOrden">
-            <p>Código de ordén:</p>
+            <p>Código de orden:</p>
             <span>{idOrden}</span>
           </div>
           <Link className="boton-orden" style={estiloCard}

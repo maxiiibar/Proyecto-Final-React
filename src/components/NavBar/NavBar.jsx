@@ -20,10 +20,10 @@ const NavBar = () => {
           <Link to="/categoria/mouses">Mouse</Link>
         </li>
         <li>
-          <Link to="/categoria/mousepads">Mousepads</Link>
+          <Link to="/categoria/monitores">Monitores</Link>
         </li>
         <li>
-          <Link to="/categoria/microfonos">Microfonos</Link>
+          <Link to="/categoria/accesorios">Accesorios</Link>
         </li>
       </ul>
       <CartWidget />
