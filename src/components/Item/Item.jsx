@@ -23,7 +23,7 @@ const Item = ({ producto }) => {
   };
 
   return (
-    <div
+    <article
       className="item"
       style={estiloCard}
       onMouseOver={handleMouseOver}
@@ -42,7 +42,7 @@ const Item = ({ producto }) => {
           Ver detalles
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

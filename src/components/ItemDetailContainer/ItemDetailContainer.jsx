@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
 
   console.log(cargando)
   return (
-    <div className="contenedor" style={cargando ? { alignItems: "center" } : ({})}>
+    <section className="contenedor" style={cargando ? { alignItems: "center" } : ({})}>
       {
         productoNoExiste ? (
           <div className="pr-no-existe">
@@ -48,7 +48,7 @@ const ItemDetailContainer = () => {
           )
         )
       }
-    </div>
+    </section>
   );
 };
 
