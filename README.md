@@ -11,9 +11,7 @@ Instalar mi proyecto con npm
   npm run dev
 ```
 
-
 ## Dependencias
-
 
 ```bash
   fortawesome

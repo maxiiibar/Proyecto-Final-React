@@ -24,8 +24,8 @@ const ItemListContainer = ({ encabezado }) => {
       consulta = productosRef;
     }
     getDocs(consulta)
-    .then((respuesta) => {
-      let productosDb = respuesta.docs.splice(0,8)
+      .then((respuesta) => {
+        let productosDb = respuesta.docs.splice(0, 8)
         productosDb = productosDb.map((productos) => {
           return { id: productos.id, ...productos.data() };
         });
@@ -37,7 +37,7 @@ const ItemListContainer = ({ encabezado }) => {
   }, [categoria]);
 
   return (
-    <div className="itemListContainer" style={cargando ? { justifyContent: "center", height: "calc(100vh - 70px)" } : (cant > 4 ? { height: "120vh" } : {height: "calc(100vh - 70px)"})}>
+    <div className="itemListContainer" style={cargando ? { justifyContent: "center", height: "calc(100vh - 70px)" } : (cant > 4 ? { height: "120vh" } : { height: "calc(100vh - 70px)" })}>
       {cargando ? (
         <BarLoader color="white" />
       ) : (

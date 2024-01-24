@@ -5,7 +5,6 @@ const CartContext = createContext()
 const CartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
 
-
     const añadirPrAlCarrito = (producto) => {
         const posicion = estaEnElCarrito(producto.id)
         if (posicion !== -1) {
@@ -43,8 +42,8 @@ const CartProvider = ({ children }) => {
     const eliminarProducto = (idProducto) => {
         const productosFiltrados = carrito.filter(
             (producto) => producto.id !== idProducto
-          );
-          setCarrito(productosFiltrados);
+        );
+        setCarrito(productosFiltrados);
     }
     const vaciarCarrito = () => {
         setCarrito([])

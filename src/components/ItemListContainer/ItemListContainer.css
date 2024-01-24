@@ -6,12 +6,14 @@
     background-color: rgba(38, 38, 38, 0.838);
     height: 100vh
 }
-.encabezado{
+
+.encabezado {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .encabezado h2 {
     text-align: center;
     color: white;

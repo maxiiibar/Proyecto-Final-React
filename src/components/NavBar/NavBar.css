@@ -51,7 +51,8 @@ nav ul li a:hover {
     cursor: pointer;
     color: white;
 }
-.brand{
+
+.brand {
     background-color: white;
     border-radius: 5px;
     height: 40px;
@@ -59,6 +60,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .brand img {
     width: 50px;
 }

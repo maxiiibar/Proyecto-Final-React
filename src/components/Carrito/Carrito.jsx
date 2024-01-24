@@ -11,7 +11,7 @@ import "./Carrito.css";
 const Carrito = () => {
   const { carrito } = useContext(CartContext);
   const [zoom, setZoom] = useState(false);
-  
+
   const handleMouseOver = () => {
     setZoom(true);
   };

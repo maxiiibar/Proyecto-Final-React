@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
 
   console.log(cargando)
   return (
-    <div className="contenedor" style={cargando ? {alignItems:"center"}: ({})}>
+    <div className="contenedor" style={cargando ? { alignItems: "center" } : ({})}>
       {
         productoNoExiste ? (
           <div className="pr-no-existe">
@@ -41,9 +41,9 @@ const ItemDetailContainer = () => {
         ) : (
           cargando ? (
             <BarLoader color="white" />
-          ) :(
+          ) : (
             <div className="itemDetailContainer">
-            <ItemDetail producto={producto} />
+              <ItemDetail producto={producto} />
             </div>
           )
         )
